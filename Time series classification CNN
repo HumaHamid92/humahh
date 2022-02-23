@@ -23,6 +23,7 @@ df = pd.read_csv('/content/drive/MyDrive/dataset/subject_1.csv')
 df_d = df.to_numpy()
 df.head()
 
+# reshape data
 def create_dataset(df_d, look_back=1):
 	dataX, dataY = [], []
 	for i in range(len(df_d)-look_back):
